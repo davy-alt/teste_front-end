@@ -1,35 +1,31 @@
-function Registrar(){
-    const email = document.querySelector("#email")
-    const senha = document.querySelector("#senha")
-    const nome = document.querySelector ("#nome")
-    const nick = document.querySelector ("#nick")
+document.getElementById("registro").addEventListener("click",
+  function(){
 
-    const emailvalue = email.value
-    const senhavalue = senha.value
-    const nomevalue = nome.value
-    const nickvalue = nick.value
+  const email = document.querySelector("#email")
+  const senha = document.querySelector("#password")
+  const nome = document.querySelector("#nome")
+  const nick = document.querySelector("#nick")
 
-    if(emailvalue === ""){
-        email.classList.add("erro")
-    }else{
-        email.classList.remove("erro")
-    }
+  //Extrair valor digitado pelo usuario no campo de input
 
-    if(senhavalue === ""){
-        senha.classList.add("erro")
-    }else{
-        senha.classList.remove("erro")
-    }
+  const emailValue = email.value;
+  const senhaValue = email.value;
+  const nomeValue = email.value;
+  const nickValue = email.value;
 
-    if(nomevalue === ""){
-        nome.classList.add("erro")
-    }else{
-        nome.classList.remove("erro")
-    }
+  if (emailValue === "") {
+    email.classList.add("erro");
+  }
 
-    if(nickvalue === ""){
-        nick.classList.add("erro")
-    }else{
-        nick.classList.remove("erro")
-    }
-}
+  if (senhaValue === "") {
+    senha.classList.add("erro");
+  }
+
+  if (nomeValue === "") {
+    nome.classList.add("erro");
+  }
+
+  if (nickValue === "") {
+    nick.classList.add("erro");
+  }
+})
